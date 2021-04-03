@@ -2,11 +2,11 @@ module.exports = ({ env }) => ({
   upload: {
     provider: "aws-s3",
     providerOptions: {
-      accessKeyId: env("AKIASMS4IRLYCLF4I744"),
-      secretAccessKey: env("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"),
-      region: "eu-west-3",
+      accessKeyId: env("AWS_ACCESS_KEY_ID"),
+      secretAccessKey: env("AWS_ACCESS_SECRET"),
+      region: "AWS_REGION",
       params: {
-        Bucket: "cezara",
+        Bucket: "AWS_BUCKET",
       },
     },
   },
